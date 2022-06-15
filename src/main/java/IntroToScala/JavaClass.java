@@ -14,7 +14,7 @@ public class JavaClass {
     }
 
     public void setX(Integer x) {
-        this.x = null;
+        this.x = x;
     }
 
     public Integer getY() {

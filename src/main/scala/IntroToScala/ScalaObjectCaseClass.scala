@@ -24,17 +24,17 @@ object CaseClass {
     println(message2.recipient, message2.sender, message2.message)
 
 
+/*
+    // What if we want to compare two classes?
     if (message1 == message2)
       println("The classes are the same!")
     else
       println("The classes are different!")
 
-    println(message1)
-    println(message2)
 
+    //println(message1)
+    //println(message2)
 
-
-/*
     // Case classes
     val messageCaseClass1: MessageCaseClass = MessageCaseClass("me", "you", "hi!")
     val messageCaseClass2: MessageCaseClass = MessageCaseClass("me", "you")
@@ -46,12 +46,14 @@ object CaseClass {
 
 
 
+    // Create another case class, different instance but same values as messageCaseClass1
     val messageCaseClass4: MessageCaseClass = MessageCaseClass("me", "you", "hi!")
 
     println(messageCaseClass1)
     println(messageCaseClass4)
 
 
+    // Are they the same?
     if (messageCaseClass1 == messageCaseClass4)
       println("The case classes are the same!")
     else
@@ -70,13 +72,13 @@ object CaseClass {
     }
 
 
+    // Match against the class type
     obj match {
       case MessageCaseClass(s, r, m) =>
         println(s"Found a Message Case Class with $s, $r, $m")
       case _ =>
         println(s"Not sure what this class is")
     }
-
 */
   }
 }

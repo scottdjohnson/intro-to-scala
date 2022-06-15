@@ -20,10 +20,11 @@ public class JavaNull {
 
         System.out.println("Hello user, you have $" + myInt);
 
+        /*
         if (myInt == null)
             System.out.println("Hello user, it looks like you are not in the system");
         else
             System.out.println("Hello user, you have $" + myInt);
-
+         */
     }
 }

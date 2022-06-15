@@ -61,7 +61,7 @@ object ScalaFuture {
 
     //Thread.sleep(5000)
 
-
+/*
     val result = for {
       v1 <- f1
       v2 <- f2
@@ -79,6 +79,6 @@ object ScalaFuture {
     //  the response appropriately.
     // Usually you do NOT want to Await for a Future, except in a unit test
     logger.info(Await.ready(result, Duration.Inf))
-
+*/
   }
 }

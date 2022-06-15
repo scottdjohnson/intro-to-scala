@@ -10,7 +10,7 @@ object ScalaMapMain {
     println(s"Original array:  ${array.mkString(", ")}")
 
     // What if we want to return the list as a modified list (eg increment each value)
-
+/*
     // Bad solution - create a new array, and fill it with the modified values
     val arrayAltered = new Array[Int](array.length)
 
@@ -20,7 +20,6 @@ object ScalaMapMain {
 
     println(s"Modified arrray: ${arrayAltered.mkString(", ")}")
 
-    /*
 
     // Better, idiomatic Scala
     val list: List[Int] = List[Int](0, 1, 2, 3, 4)
@@ -43,7 +42,7 @@ object ScalaMapMain {
 
     val myNoneInt: Option[Int] = None
     val result2 = myNoneInt.map(i => i * i)
-    println("result2: $result2")
-    */
+    println(s"result2: $result2")
+*/
   }
 }

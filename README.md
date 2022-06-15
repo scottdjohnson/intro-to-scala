@@ -14,7 +14,7 @@ Intro to Scala for Java Programmers
 
 7. ScalaException
 
-8. ScalaMapFlatmapFilter
+8. ScalaMapFlatMapFilter
 
 9. ScalaForYield
 
