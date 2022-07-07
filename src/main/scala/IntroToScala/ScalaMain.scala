@@ -40,11 +40,11 @@ object ScalaClassImmutableMain {
   def main(args: Array[String]): Unit = {
     // NOTE: "val" means it cannot be changed...
     val sci = new ScalaClassImmutable(5, 10)
-    System.out.println(sci.sum)
+    println(sci.sum)
 
     // ...so we just create a new instance
     val sciTwo = new ScalaClassImmutable(1, 2)
-    System.out.println(sciTwo.sum)
+    println(sciTwo.sum)
   }
 }
 

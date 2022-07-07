@@ -1,5 +1,7 @@
 package IntroToScala
 
+import scala.util.Random
+
 class ScalaMessage(val sender: String, val recipient: String, val message: String)
 
 // Companion object
@@ -19,6 +21,7 @@ object CaseClass {
   def main(args: Array[String]): Unit = {
     val message1: ScalaMessage = new ScalaMessage("me", "you", "hi!")
     val message2: ScalaMessage = ScalaMessage("me", "you", "hi!")
+    val messageToMe: ScalaMessage = ScalaMessage("me")
 
     println(message1.recipient, message1.sender, message1.message)
     println(message2.recipient, message2.sender, message2.message)

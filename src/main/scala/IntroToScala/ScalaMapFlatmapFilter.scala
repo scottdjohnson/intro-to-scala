@@ -30,6 +30,9 @@ object ScalaMapFlatMapFilter {
     val evenList4: List[Int] = list.filter(_ % 2 == 0)
 
     println(evenList4)
-    */
+
+    val result = list.map(i => i + 1).filter(i => i % 2 == 0).flatMap(i => if (i % 3 == 0) None else Some(i)).mkString(", ")
+    println(result)
+*/
   }
 }

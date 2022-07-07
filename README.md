@@ -12,10 +12,12 @@ Intro to Scala for Java Programmers
 
 6. JavaNull vs ScalaOption
 
-7. ScalaException
+7. ScalaException (Try)
 
 8. ScalaMapFlatMapFilter
 
 9. ScalaForYield
 
-10. ScalaFuture
+10. ScalaFunction
+   
+11. ScalaFuture

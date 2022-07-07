@@ -9,7 +9,7 @@ object ScalaMapMain {
     val array: Array[Int] = Array[Int](0, 1, 2, 3, 4)
     println(s"Original array:  ${array.mkString(", ")}")
 
-    // What if we want to return the list as a modified list (eg increment each value)
+    // What if we want to return the array as a modified array (eg increment each value)
 /*
     // Bad solution - create a new array, and fill it with the modified values
     val arrayAltered = new Array[Int](array.length)
@@ -43,6 +43,13 @@ object ScalaMapMain {
     val myNoneInt: Option[Int] = None
     val result2 = myNoneInt.map(i => i * i)
     println(s"result2: $result2")
+
+    val list3 = listAltered2
+    // What is wrong with a unit test like this?
+    list3.foreach { i =>
+      assert(i > 0)
+    }
+
 */
   }
 }

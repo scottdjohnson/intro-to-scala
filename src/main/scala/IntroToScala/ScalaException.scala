@@ -43,6 +43,9 @@ object ScalaException {
 
 
   // Turn your unstable function into a stable function
+  // Scala Try[A], returns
+  //  Success(v: A)
+  //  Failure(ex: Exception)
   def stableFunction(): Try[Int] = Try { unstableFunction() }
 
   def testGood(): Unit =
@@ -56,10 +59,10 @@ object ScalaException {
   // Good, will work sometimes, but what is missing?
   def testMaybeGood(): Unit = stableFunction().map(logEvenOdd(_))
 
-  /*
-    This won't even compile - why???
 
-    def testSyntaxError() = logEvenOdd(stableFunction())
-  */
+    //This won't even compile - why???
+
+    //def testSyntaxError() = logEvenOdd(stableFunction())
+
 
 }

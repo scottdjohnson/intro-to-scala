@@ -13,7 +13,7 @@ object ScalaForLoop {
     var i: Int = 0
     while (i < array.length) {
       println(array(i))
-      i = i + 1
+      i = i + 1     // No i++
     }
 
     // Better
@@ -27,11 +27,9 @@ object ScalaForLoop {
     }
 
     // Best, idiomatic scala
-    array.foreach( i => println())
+    array.foreach( i => println(i))
 
     array.foreach(println(_))
-
-    array.foreach(println)
 
     array.foreach(println)
 
